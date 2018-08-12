@@ -1,14 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-struct Node{
+struct Node{    //sturct node 
   int data;
   struct Node* next;
 }Node;
 
-struct Node* head;
+struct Node* head;    //node pointer 
 
-void Insert(int x);
+void Insert(int x);    // function declaration
 void Print();
 
 int main(){
@@ -26,7 +26,7 @@ int main(){
   }
 }
 
-void Insert(int x){
+void Insert(int x){    //insert value to the node 
   struct Node* temp = (struct Node*)malloc(sizeof(struct Node));
   temp->data = x;
   temp->next = NULL;
